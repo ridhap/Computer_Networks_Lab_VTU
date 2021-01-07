@@ -1,13 +1,20 @@
 
 /*2. Implement transmission of ping messages/trace routeover a network topology 
 consisting of 6 nodes and find the number of packets dropped due to congestion.*/
+/*Networktopology
 
+  n0  n1  n2  n3  n4  n5
+  |   |   |   |   |   |
+  ==========================
+CSMA channel with base IP 10.1.1.0
 
+In this program we have created 6 CSMA nodes n0,n1,n2,n3,n4 and n5 with
+IP addresses 10.1.1.1, 10.1.1.2, 10.1.1.3, 10.1.1.4, 10.1.1.5 and 10.1.1.6 respectively.
+Nodes n0 and n1 ping node n2, we can visualize the ping messages transferred between the nodes.
+Data transfer is also simulated between the nodes n0 and n2 using UdpSocketFactory to generate traffic.
+Topology
 
-
-
-
-
+*/
 
 #include "ns3/core-module.h"
 #include "ns3/network-module.h"
